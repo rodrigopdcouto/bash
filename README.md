@@ -76,8 +76,6 @@ localização do comando:
 
 Um comando mesmo que externo após digitado muitas vezes o Linux nos cria um cache
 interno como é o caso do comando “clear”. O comando “clear” é um comando externo.
-Após algumas vezes digitado ele passa a ser hashed. 
-
-cacheado pelo sistema Linux:
+Após algumas vezes digitado ele passa a ser hashed. cacheado pelo sistema Linux:
 
 ![alt text](https://github.com/rodrigopdcouto/bash/blob/main/img/img0003.png)
