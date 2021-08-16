@@ -1,4 +1,4 @@
-# Repositório de Comandos em Bashcls
+# Repositório de Comandos em Bash
 
 ## Copia de Arquivos
 ```
