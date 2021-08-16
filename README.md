@@ -79,3 +79,41 @@ interno como é o caso do comando `clear`. O comando `clear` é um comando exter
 Após algumas vezes digitado ele passa a ser hashed. cacheado pelo sistema Linux:
 
 ![alt text](https://github.com/rodrigopdcouto/bash/blob/main/img/img0003.png)
+
+## 2.3 Path
+
+O PATH serve para indicar para o sistema o caminho dos comandos externos dentro do
+Linux. Quando damos o comando abaixo ele nos mostra os diretórios em que os programas e
+comandos estarão localizados:
+
+```
+$ echo $PATH
+```
+
+Quando um comando é acionado ele procura em cada diretório onde está o programa
+correspondente. Os diretórios estão separados por “:”.
+
+![alt text](https://github.com/rodrigopdcouto/bash/blob/main/img/img0004.png)
+
+Há também formas de chamar um comando quando o ele não é interno e nem está
+presente dentro dos diretórios acima dos programas externos. Para fazer isso podemos fazer
+das seguintes formas:
+
+    `Caminho Absoluto`
+    Dessa forma ele executará normalmente, pois indicamos o path exato de onde está o
+    programa que queremos executar.
+
+    ```
+    $ /home/lpi1/Exercicios/Script_Exemplo.sh
+    ```
+
+    ![alt text](https://github.com/rodrigopdcouto/bash/blob/main/img/img0005.png)
+
+    `Caminho Relativo ou Parcial`
+    Neste caso, se você já estiver em uma pasta que está no mesmo caminho que o script
+    que deseja executar basta continuar o comando até o caminho do script. Perceba que,
+    estamos dentro da pasta do usuário /home/lip1, podemos conferir com o comando “pwd”, o
+    script se encontra dentro de Exercicios/Script_Exemplo.sh que já é parte do caminho do
+    script:
+
+    ![alt text](https://github.com/rodrigopdcouto/bash/blob/main/img/img0006.png)
