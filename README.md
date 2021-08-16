@@ -66,3 +66,5 @@ $ type echo
 ```
 Após esse comando ele nos retornará uma mensagem nos dizendo se é ou não um
 comando interno do shell, ou seja, já está em sua compilação de origem.
+
+![alt text](https://github.com/rodrigopdcouto/bash/blob/main/img/img0001.png)
