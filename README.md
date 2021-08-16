@@ -99,21 +99,20 @@ Há também formas de chamar um comando quando o ele não é interno e nem está
 presente dentro dos diretórios acima dos programas externos. Para fazer isso podemos fazer
 das seguintes formas:
 
-    `Caminho Absoluto`
-    Dessa forma ele executará normalmente, pois indicamos o path exato de onde está o
-    programa que queremos executar.
+`Caminho Absoluto`
+Dessa forma ele executará normalmente, pois indicamos o path exato de onde está o
+programa que queremos executar.
 
-    ```
-    $ /home/lpi1/Exercicios/Script_Exemplo.sh
-    ```
+```
+$ /home/lpi1/Exercicios/Script_Exemplo.sh
+```
+![alt text](https://github.com/rodrigopdcouto/bash/blob/main/img/img0005.png)
 
-    ![alt text](https://github.com/rodrigopdcouto/bash/blob/main/img/img0005.png)
+`Caminho Relativo ou Parcial`
+Neste caso, se você já estiver em uma pasta que está no mesmo caminho que o script
+que deseja executar basta continuar o comando até o caminho do script. Perceba que,
+estamos dentro da pasta do usuário /home/lip1, podemos conferir com o comando “pwd”, o
+script se encontra dentro de Exercicios/Script_Exemplo.sh que já é parte do caminho do
+script:
 
-    `Caminho Relativo ou Parcial`
-    Neste caso, se você já estiver em uma pasta que está no mesmo caminho que o script
-    que deseja executar basta continuar o comando até o caminho do script. Perceba que,
-    estamos dentro da pasta do usuário /home/lip1, podemos conferir com o comando “pwd”, o
-    script se encontra dentro de Exercicios/Script_Exemplo.sh que já é parte do caminho do
-    script:
-
-    ![alt text](https://github.com/rodrigopdcouto/bash/blob/main/img/img0006.png)
+![alt text](https://github.com/rodrigopdcouto/bash/blob/main/img/img0006.png)
