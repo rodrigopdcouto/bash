@@ -13,19 +13,19 @@ yum install php php-mbstring php-gd php-mcrypt php-pear php-pspell php-pdo php-x
 /etc/httpd/conf.d/owncloud.conf
 
 <VirtualHost *:80>
-    ServerName owncloud.epl.gov.br
-    Redirect / https://owncloud.epl.gov.br/
+    ServerName owncloud.yousite.com
+    Redirect / https://owncloud.yousite.com/
 </VirtualHost>
 <VirtualHost *:443>
   DocumentRoot /var/www/html/owncloud
-  ServerName owncloud.epl.gov.br
+  ServerName owncloud.yousite.com
 
   SSLEngine on
   SSLProxyEngine on
   SSLProtocol all -SSLv2 -SSLv3
-  SSLCertificateFile /etc/httpd/conf.d/ssl_certs/wildcard.epl.gov.br/cert.pem
-  SSLCertificateKeyFile /etc/httpd/conf.d/ssl_certs/wildcard.epl.gov.br/privkey.pem
-  SSLCACertificateFile /etc/httpd/conf.d/ssl_certs/wildcard.epl.gov.br/chain.pem
+  SSLCertificateFile /etc/httpd/conf.d/ssl_certs/yousite.com/cert.pem
+  SSLCertificateKeyFile /etc/httpd/conf.d/ssl_certs/yousite.com/privkey.pem
+  SSLCACertificateFile /etc/httpd/conf.d/ssl_certs/yousite.com/chain.pem
   SSLProxyCheckPeerCN off
   SSLProxyCheckPeerName off
 
