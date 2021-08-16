@@ -58,7 +58,7 @@ existindo no diretório, ele é criado automaticamente ao executarmos o comando.
 No Linux existem comandos que são internos do shell que já são embutidos no
 programa SHELL e também comandos que são externos ou migrados de outras aplicações que
 estão em nosso sistema. Para sabermos se um comando é de origem SHELL para usarmos o
-comando type.
+comando `type`.
 
 Exemplo: 
 ```
