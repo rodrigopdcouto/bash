@@ -100,7 +100,7 @@ presente dentro dos diretórios acima dos programas externos. Para fazer isso po
 das seguintes formas:
 
 `Caminho Absoluto`
-Dessa forma ele executará normalmente, pois indicamos o path exato de onde está o
+dessa forma ele executará normalmente, pois indicamos o path exato de onde está o
 programa que queremos executar.
 
 ```
@@ -109,10 +109,21 @@ $ /home/lpi1/Exercicios/Script_Exemplo.sh
 ![alt text](https://github.com/rodrigopdcouto/bash/blob/main/img/img0005.png)
 
 `Caminho Relativo ou Parcial`
-Neste caso, se você já estiver em uma pasta que está no mesmo caminho que o script
+neste caso, se você já estiver em uma pasta que está no mesmo caminho que o script
 que deseja executar basta continuar o comando até o caminho do script. Perceba que,
 estamos dentro da pasta do usuário /home/lip1, podemos conferir com o comando “pwd”, o
 script se encontra dentro de Exercicios/Script_Exemplo.sh que já é parte do caminho do
 script:
 
 ![alt text](https://github.com/rodrigopdcouto/bash/blob/main/img/img0006.png)
+
+`Dentro do diretório`
+neste caso, usaremos “./ “ que quer dizer: neste diretório. Para executar o comando
+dessa forma temos que estar dentro do diretório em que o script se encontra, e lá, fazermos
+da seguinte forma para termos sucesso no comando:
+
+```
+$ ./Script_Exemplo.sh
+```
+
+![alt text](https://github.com/rodrigopdcouto/bash/blob/main/img/img0007.png)
