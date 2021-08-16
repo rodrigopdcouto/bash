@@ -27,3 +27,16 @@ representado por "csh".
 boa portabilidade, pois possui características do Korn Shell e C Shell. É representado
 por "bash". 
 ```
+## Verificando o tipo de shell
+```
+Para verificar qual SHELL estamos usando, basta digitar o comando abaixo, ele irá imprimir
+na tela o caminho do shell bash “/bin/bash”: $ echo $SHELL
+```
+
+# Comandos
+
+## Echo
+```
+O comando serve para imprimir informações na tela. Em conjunto com o símbolo de
+redirecionamento de saída >>, estudado mais à frente, também é utilizado para concatenar
+informações para dentro de um arquivo. 
