@@ -68,3 +68,16 @@ Após esse comando ele nos retornará uma mensagem nos dizendo se é ou não um
 comando interno do shell, ou seja, já está em sua compilação de origem.
 
 ![alt text](https://github.com/rodrigopdcouto/bash/blob/main/img/img0001.png)
+
+Quando fazemos o type apontando para outro comando que é externo, ele nos mostra a
+localização do comando:
+
+![alt text](https://github.com/rodrigopdcouto/bash/blob/main/img/img0002.png)
+
+Um comando mesmo que externo após digitado muitas vezes o Linux nos cria um cache
+interno como é o caso do comando “clear”. O comando “clear” é um comando externo.
+Após algumas vezes digitado ele passa a ser hashed. 
+
+cacheado pelo sistema Linux:
+
+![alt text](https://github.com/rodrigopdcouto/bash/blob/main/img/img0003.png)
