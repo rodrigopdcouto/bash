@@ -1,2 +1,6 @@
-# Repositório de Comandos em Bash
-Repositorio de Comandos BASH
+# Repositório de Comandos em Bashcls
+
+## Copia de Arquivos
+```
+cp -rp [ogiem] [destino]
+``` 
