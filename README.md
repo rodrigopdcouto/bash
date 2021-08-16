@@ -41,3 +41,8 @@ yum install php php-mbstring php-gd php-mcrypt php-pear php-pspell php-pdo php-x
   </Directory>
 </VirtualHost>
 ```
+# Procedimento para instalar o Zabbix 
+```
+shell~$ curl -fsSL https://get.docker.com | bash
+shell~# usermod -aG docker you_user
+```
