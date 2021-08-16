@@ -46,3 +46,8 @@ yum install php php-mbstring php-gd php-mcrypt php-pear php-pspell php-pdo php-x
 shell~$ curl -fsSL https://get.docker.com | bash
 shell~$ sudo usermod -aG docker $USER
 ```
+# Procedimento de instalação NFS
+```
+yum install nfs-utils
+yum install nfs-utils nfs-utils-lib
+```
