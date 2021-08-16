@@ -1,53 +1,29 @@
 # Repositório de Comandos em Bash
 
-## Instalação PHP 7.2
-```
-yum install epel-release
-yum update
-yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
-yum-config-manager --enable remi-php72
-yum install php php-mbstring php-gd php-mcrypt php-pear php-pspell php-pdo php-xml php-mysqlnd php-pgsql php-process php-pecl-zip php-xml php-intl php-zip php-zlib php-apcu php-redis
-``` 
-## Configuração Virtual Host
-```
-/etc/httpd/conf.d/owncloud.conf
+## Tipos de Shell
 
-<VirtualHost *:80>
-    ServerName owncloud.yousite.com
-    Redirect / https://owncloud.yousite.com/
-</VirtualHost>
-<VirtualHost *:443>
-  DocumentRoot /var/www/html/owncloud
-  ServerName owncloud.yousite.com
-
-  SSLEngine on
-  SSLProxyEngine on
-  SSLProtocol all -SSLv2 -SSLv3
-  SSLCertificateFile /etc/httpd/conf.d/ssl_certs/yousite.com/cert.pem
-  SSLCertificateKeyFile /etc/httpd/conf.d/ssl_certs/yousite.com/privkey.pem
-  SSLCACertificateFile /etc/httpd/conf.d/ssl_certs/yousite.com/chain.pem
-  SSLProxyCheckPeerCN off
-  SSLProxyCheckPeerName off
-
-  Loglevel debug
-  ErrorLog /var/log/httpd/owncloud/error_log
-  CustomLog /var/log/httpd/owncloud/access_log common
-
-  <Directory /var/www/html/owncloud>
-     Options Indexes FollowSymLinks
-     AllowOverride All
-     Order allow,deny
-     Allow from all
-  </Directory>
-</VirtualHost>
+### Bourne Shell
 ```
-# Procedimento para instalar o Docker 
+Bourne Shell é o shell padrão para Unix, ou seja, a matriz dos outros shells. É
+representado por "sh". Foi desenvolvido por Stephen Bourne, por isso Bourne Shell.
 ```
-shell~$ curl -fsSL https://get.docker.com | bash
-shell~$ sudo usermod -aG docker $USER
+### Korn Shell
 ```
-# Procedimento de instalação NFS
+Korn Shell este shell é o Bourne Shell evoluído, portando todos os comandos que
+funcionavam no Bourne Shell funcionarão neste com a vantagem de ter mais opções. É
+representado por "ksh".
 ```
-yum install nfs-utils
-yum install nfs-utils nfs-utils-lib
+### C Shell
+```
+C Shell é o shell mais utilizado em BSD, e possui uma sintaxe muito parecida com a
+linguagem C. Este tipo de shell já se distancia mais do Bourne Shell, portanto quem
+programa para ele terá problemas quanto a portabilidade em outros tipos. É
+representado por "csh".
+```
+### Bourne Again Shell
+```
+é o shell desenvolvido para o projeto GNU usado pelo GNU/Linux,
+é muito usado pois o sistema que o porta evolui e é adotado rapidamente. Possui uma
+boa portabilidade, pois possui características do Korn Shell e C Shell. É representado
+por "bash". 
 ```
