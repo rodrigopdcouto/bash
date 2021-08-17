@@ -127,5 +127,3 @@ $ ./Script_Exemplo.sh
 ```
 
 ![alt text](https://github.com/rodrigopdcouto/bash/blob/main/img/img0007.png)
-
-Teste
